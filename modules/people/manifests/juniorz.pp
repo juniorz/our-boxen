@@ -1,7 +1,6 @@
 # My username config
 
 class people::juniorz {
-  include boxen_ext::hosts
   include people::juniorz::osx_config
   include people::juniorz::apps
 
