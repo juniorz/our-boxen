@@ -1,55 +1,48 @@
+# My username config
+
 class people::juniorz {
+  include boxen_ext::hosts
   include people::juniorz::osx_config
   include people::juniorz::apps
-
-  include projects::all
 
   $my_home_dir = "/Users/${::boxen_user}"
   $my_apps_dir = "${my_home_dir}/Applications"
 
   osx_login_item { 'Alfred 2':
-    name => 'Alfred 2',
-    path => "${my_apps_dir}/Alfred 2.app",
-    hidden => true,
+    name    => 'Alfred 2',
+    path    => "${my_apps_dir}/Alfred 2.app",
+    hidden  => true,
     require => Package['alfred'],
   }
 
   osx_login_item { 'Caffeine':
-    name => 'Caffeine',
-    path => "${my_apps_dir}/Caffeine.app",
-    hidden => true,
+    name    => 'Caffeine',
+    path    => "${my_apps_dir}/Caffeine.app",
+    hidden  => true,
     require => Package['caffeine'],
   }
 
   osx_login_item { 'Flux':
-    name => 'Flux',
-    path => "${my_apps_dir}/Flux.app",
-    hidden => true,
+    name    => 'Flux',
+    path    => "${my_apps_dir}/Flux.app",
+    hidden  => true,
     require => Package['flux'],
   }
 
   osx_login_item { 'Dropbox':
-    name => 'Dropbox',
-    path => "${my_apps_dir}/Dropbox.app",
-    hidden => true,
+    name    => 'Dropbox',
+    path    => "${my_apps_dir}/Dropbox.app",
+    hidden  => true,
     require => Package['dropbox'],
   }
 
   osx_login_item { 'Steam':
-    ensure => absent,
-    name => 'Steam',
-    path => "${my_apps_dir}/Steam.app",
-    hidden => true,
+    ensure  => absent,
+    name    => 'Steam',
+    path    => "${my_apps_dir}/Steam.app",
+    hidden  => true,
     require => Package['steam'],
   }
-
-  #	osx_login_item { 'Dropbox':
-  #	   name => 'Dropbox',
-  #	   path => '/Applications/Dropbox.app',
-  #	   hidden => true,
-  #	   require => Class['dropbox'],
-  #	}
-
 
   boxen::osx_defaults { 'Copy text from QuickLook':
     ensure => present,
@@ -59,10 +52,10 @@ class people::juniorz {
   }
 
   boxen::osx_defaults { 'Finder Status Bar':
-    ensure	=> 	present,
-    domain	=>	'com.apple.finder',
-    key	=>	'ShowStatusBar',
-    value	=>	'YES',
+    ensure  => present,
+    domain  => 'com.apple.finder',
+    key     => 'ShowStatusBar',
+    value   => 'YES',
   }
 
   boxen::osx_defaults { 'Show time connected in the VPN menubar item':
@@ -119,5 +112,4 @@ class people::juniorz {
   #    source  => 'jbarnette/dotfiles',
   #    require => File[$my]
   #  }
-
- }
+}

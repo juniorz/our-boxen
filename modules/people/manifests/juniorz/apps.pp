@@ -1,7 +1,6 @@
 class people::juniorz::apps {
   include homebrew
   include brewcask
-  include couchpotato
 
   package { ['git', 'vim', 'zsh']:
     ensure => present,
@@ -31,7 +30,7 @@ class people::juniorz::apps {
     provider => 'brewcask',
     ensure => present,
     install_options => [
-      '--verbose'
+      '--debug'
     ]
   }
 
