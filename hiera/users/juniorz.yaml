@@ -4,3 +4,5 @@
 boxen::security:
   require_password: true
   screensaver_delay_sec: 3
+
+ruby::provider: "chruby"
