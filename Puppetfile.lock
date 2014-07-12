@@ -3,7 +3,7 @@ GIT
   ref: master
   sha: 523e6440e58eb502bd915576304cc943c43761e5
   specs:
-    boxen/puppet-brewcask (0.0.1)
+    boxen/brewcask (0.0.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-boxen
@@ -112,7 +112,7 @@ GITHUBTARBALL
 
 DEPENDENCIES
   boxen (= 3.6.1)
-  boxen/puppet-brewcask (>= 0)
+  boxen/brewcask (>= 0)
   dnsmasq (= 1.0.1)
   foreman (= 1.2.0)
   gcc (= 2.0.101)
