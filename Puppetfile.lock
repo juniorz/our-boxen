@@ -1,7 +1,7 @@
 GIT
   remote: git://github.com/juniorz/puppet-brewcask.git
   ref: master
-  sha: 523e6440e58eb502bd915576304cc943c43761e5
+  sha: c525f0cdc5f4d042dec0614b0e63f2218188e03d
   specs:
     boxen/brewcask (0.0.1)
 
