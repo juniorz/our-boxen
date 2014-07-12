@@ -1,6 +1,6 @@
 ---
 # My user preferences in a company context
 
-boxen::security
+boxen::security:
   require_password: true
   screensaver_delay_sec: 3
