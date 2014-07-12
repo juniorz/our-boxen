@@ -1,0 +1,5 @@
+---
+# My macmini conf
+boxen::security
+  require_password: false
+  screensaver_delay_sec: 15

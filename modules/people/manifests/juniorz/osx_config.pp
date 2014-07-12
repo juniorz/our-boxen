@@ -1,4 +1,7 @@
+# OSX configurations
+
 class people::juniorz::osx_config {
+  include boxen::security
   include osx::global::disable_key_press_and_hold
   include osx::global::enable_standard_function_keys
   include osx::global::disable_autocorrect
@@ -13,10 +16,6 @@ class people::juniorz::osx_config {
 
   class { 'osx::dock::hot_corners':
     top_right => 'Put Display to Sleep',
-  }
-
-  class { 'boxen::security' :
-    screensaver_delay_sec => '3',
   }
 
   # Shell

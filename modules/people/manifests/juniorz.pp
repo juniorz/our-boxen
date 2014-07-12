@@ -64,6 +64,7 @@ class people::juniorz {
     type   => 'bool',
     value  => 'true',
   }
+
   #
   #		# Set up iTerm Preferences
   #		boxen::osx_defaults { 'Load iTerm prefences from a custom folder':
