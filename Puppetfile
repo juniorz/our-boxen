@@ -59,8 +59,9 @@ github "xquartz",     "1.1.1"
 
 github "osx",	"2.7.0"
 
-mod "boxen/puppet-brewcask", :ref => "install_ordering",
-                      :git => "git://github.com/juniorz/puppet-brewcask.git"
+mod "boxen/puppet-brewcask",
+    :git => "git://github.com/juniorz/puppet-brewcask.git"
+
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.

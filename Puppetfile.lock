@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/juniorz/puppet-brewcask.git
-  ref: install_ordering
+  ref: master
   sha: 523e6440e58eb502bd915576304cc943c43761e5
   specs:
     boxen/puppet-brewcask (0.0.1)
